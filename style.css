@@ -1,0 +1,253 @@
+* { border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 10vh;
+    background-image: linear-gradient(to bottom right, #CBEAA6, #D5DCF9);
+    background-attachment: fixed;
+    padding-top: 50px;
+}
+
+.top_bar {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 50px;
+    background-color:  rgb(46, 46, 46);
+}
+
+.title_style {
+    text-decoration: none;
+    color: #f9f9f9;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    height: 50px;
+    font-size: 30px;
+}
+
+#irenoved_style {
+    text-decoration: none;
+    color: #f9f9f9;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: 50px;
+    font-size: 30px;
+}
+
+.box_top {
+    position: absolute;
+    top: 100px;
+    left: 30px;
+    padding: 20px;
+}
+
+.links {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    font-weight: 30px;
+    font-family: "Exo 2", sans-serif;
+}
+
+.img_principal {
+    position: absolute;
+    top: 20%;
+    left: 40%;
+}
+
+nav a:hover {
+    color: white;
+}
+
+.h2_title {
+    position: absolute;
+    top: 130px;
+    left: 33%;
+    font-family: "Exo 2", sans-serif;
+}
+
+footer {
+    position: fixed;
+    color: rgb(194, 194, 194);
+    bottom:0px;
+    background-color: rgb(46, 46, 46);
+    width: 100%;
+    text-align: center;
+}
+
+.sobre_nosotrostxt {
+    padding: 100px;
+    font-size: 13px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    font-size: 20px;
+}
+
+nav {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 0;
+    position: relative;
+    top: 600px;
+    left: 50vh;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    margin-top: 20px;
+    padding: 0;
+    display: inline-flex;
+}
+
+nav li {
+    margin: 0 20px;
+}
+
+.technical_specificationstxt {
+    position: absolute;
+    top:100px;
+    left: 110vh;
+    font-size: 30px;
+}
+
+.space {
+    padding: 1px;
+    font-family: "Exo 2", sans-serif;
+}
+
+.bold_accesories {
+    font-weight: bold;
+    font-family: "Exo 2", sans-serif;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .container {
+        padding: 10px;
+        font-size: 16px;
+    }
+    .container label,
+    .container input[type="text"],
+    .container input[type="password"],
+    .container input[type="submit"] {
+        display: block;
+        margin-bottom: 10px;
+        bottom: 100px;
+        width: 100%;
+    }
+} 
+
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label, input[type="text"], input[type="password"], input[type="submit"] {
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.img_productos:hover {
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+.img_productos {
+    height: auto;
+    width: 200px;
+
+}
+.contenedor_img {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 20px;
+    row-gap: 100px;
+    justify-items: center;
+}
+
+@media (max-width: 767px) {
+    .contenedor_img {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.productos_imagenes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.descripcion {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.boton_compra {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.boton_compra:hover {
+    background-color: #3e8e41;
+}
+
+
+
+.carousel-inner.carousel-item {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-inner img {
+    max-width: 40%;
+    margin: 0 auto;
+    display: block;
+}
+.carousel-control-prev, .carousel-control-next {
+    color: rgb(4, 4, 4);
+}
+
+.carousel-control-prev-icon,.carousel-control-next-icon {
+    filter: invert(100%);
+
+}
+    .navbar-dark .navbar-nav .nav-link:focus,
+    .navbar-dark .navbar-nav .nav-link:hover,
+    .navbar-toggler:focus,
+    .navbar-toggler-icon:focus {
+        outline: none !important;
+        box-shadow: none !important;
+    }
+
+    .navbar-brand {
+        margin-left: 15px;
+    }
+
+    .navbar {
+        margin-top: 0;
+        padding-top: 0;
+    }
+    .navbar-custom {
+        background-color: rgb(46, 46, 46);
+    }
